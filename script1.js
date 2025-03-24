@@ -18,11 +18,11 @@ let forecastDataGlobal = null;
 async function getWeather(cityName = null, lat = null, lon = null) {
     let currentUrl, forecastUrl;
     if (cityName) {
-      currentUrl = `https://weather-nest-beta-j2ni59dr8-advay-2306s-projects.vercel.app/api/weather?city=${encodeURIComponent(cityName)}`;
-      forecastUrl = `https://weather-nest-beta-j2ni59dr8-advay-2306s-projects.vercel.app/api/forecast?city=${encodeURIComponent(cityName)}`;
+        currentUrl = `https://weather-nest-beta.vercel.app/api/weather?city=${encodeURIComponent(cityName)}`;
+        forecastUrl = `https://weather-nest-beta.vercel.app/api/forecast?city=${encodeURIComponent(cityName)}`;
     } else if (lat && lon) {
-      currentUrl = `https://weather-nest-beta-j2ni59dr8-advay-2306s-projects.vercel.app/api/weather?lat=${lat}&lon=${lon}`;
-      forecastUrl = `https://weather-nest-beta-j2ni59dr8-advay-2306s-projects.vercel.app/api/forecast?lat=${lat}&lon=${lon}`;
+        currentUrl = `https://weather-nest-beta.vercel.app/api/weather?lat=${lat}&lon=${lon}`;
+        forecastUrl = `https://weather-nest-beta.vercel.app/api/forecast?lat=${lat}&lon=${lon}`;
     }
   
     try {
