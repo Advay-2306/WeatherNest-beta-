@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     animation: gradientShift 15s ease infinite;
-    background-size: 200% 200%; /* Enhances gradient animation */
+    background-size: 200% 200%;
 }
 
 @keyframes gradientShift {
@@ -24,7 +24,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    animation: fadeIn 1s ease-in; /* Subtle fade-in for content */
+    animation: fadeIn 1s ease-in;
 }
 
 @keyframes fadeIn {
@@ -40,8 +40,8 @@ header {
 header h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
-    animation: slideIn 0.8s ease-out; /* Slide-in effect */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.8s ease-out;
 }
 
 @keyframes slideIn {
@@ -66,38 +66,38 @@ input, button {
 
 input {
     width: 250px;
-    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    background: rgba(255, 255, 255, 0.95);
     color: #333;
     outline: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 input:focus {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brighter glow */
-    transform: scale(1.02); /* Slight scale-up on focus */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    transform: scale(1.02);
 }
 
 button {
     background: #4682B4;
     color: white;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background: #5A9BD4;
-    transform: scale(1.05) translateY(-2px); /* Lift effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .weather-card, .forecast-section {
-    background: rgba(255, 255, 255, 0.15); /* Slightly more opaque */
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* Softer, deeper shadow */
-    backdrop-filter: blur(8px); /* Enhanced blur */
-    animation: fadeInUp 0.6s ease-out; /* Fade-in-up effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    animation: fadeInUp 0.6s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -109,7 +109,7 @@ button:hover {
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 #weatherInfo {
@@ -119,7 +119,7 @@ button:hover {
 #weatherInfo h3 {
     font-size: 2rem;
     margin-bottom: 10px;
-    animation: pulseText 2s infinite; /* Gentle pulsing effect */
+    animation: pulseText 2s infinite;
 }
 
 @keyframes pulseText {
@@ -132,17 +132,17 @@ button:hover {
     width: 80px;
     height: 80px;
     transition: transform 0.3s ease;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* Icon shadow */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .weather-icon:hover {
-    transform: scale(1.1) rotate(5deg); /* Added slight rotation */
+    transform: scale(1.1) rotate(5deg);
 }
 
 #weatherInfo p, .forecast-day p {
     font-size: 1.1rem;
     margin: 5px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .forecast-grid {
@@ -152,7 +152,7 @@ button:hover {
 }
 
 .forecast-day {
-    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque */
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 15px;
     text-align: center;
@@ -161,9 +161,9 @@ button:hover {
 }
 
 .forecast-day:hover {
-    transform: translateY(-5px) scale(1.03); /* Added slight scale */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35); /* Stronger shadow */
-    background: rgba(255, 255, 255, 0.3); /* Brighter on hover */
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .forecast-day .weather-icon {
@@ -173,7 +173,46 @@ button:hover {
 }
 
 .forecast-day:hover .weather-icon {
-    transform: rotate(10deg); /* Subtle icon rotation */
+    transform: rotate(10deg);
+}
+
+.hourly-grid {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 15px;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+
+.hourly-item {
+    width: 100px; /* Fixed width for equal-sized boxes */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute content evenly */
+    min-height: 120px; /* Ensure enough height for content */
+}
+
+.hourly-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.hourly-item p {
+    font-size: 0.9rem; /* Slightly smaller font to fit */
+    margin: 2px 0; /* Reduced margin for compactness */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .modal {
@@ -183,9 +222,9 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Darker overlay */
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
-    animation: fadeIn 0.5s ease; /* Fade-in for modal */
+    animation: fadeIn 0.5s ease;
 }
 
 .modal-content {
@@ -196,7 +235,8 @@ button:hover {
     max-width: 800px;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden; /* Prevent map overflow */
 }
 
 .close {
@@ -207,17 +247,24 @@ button:hover {
     color: #333;
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 1010; /* Ensure it’s above the map */
+    background: rgba(255, 255, 255, 0.8); /* Slight background for visibility */
+    padding: 2px 8px;
+    border-radius: 50%; /* Circular background */
+    line-height: 1;
 }
 
 .close:hover {
     color: #4682B4;
-    transform: rotate(90deg); /* Rotate on hover */
+    transform: rotate(90deg);
+    background: rgba(255, 255, 255, 1); /* Brighter on hover */
 }
 
 #map {
     height: 500px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle map shadow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1005; /* Below the close button */
 }
 
 @media (max-width: 768px) {
@@ -234,5 +281,9 @@ button:hover {
     .weather-icon {
         width: 60px;
         height: 60px;
+    }
+    .hourly-item {
+        width: 90px;
+        min-height: 110px;
     }
 }
