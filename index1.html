@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNest.com</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>WeatherNest<br>Your Go-To Weather App!</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+            <button id="mapBtn">Map</button>
+        </div>
+    </header>
+
+    <section id="currentWeather" class="weather-card">
+        <h2>Current Weather</h2>
+        <div id="weatherInfo">Loading weather data...</div>
+    </section>
+
+    <section id="forecast" class="forecast-section">
+        <h2>7-Day Forecast</h2>
+        <div id="forecastInfo" class="forecast-grid"></div>
+    </section>
+
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script1.js"></script>
+</body>
+</html>
